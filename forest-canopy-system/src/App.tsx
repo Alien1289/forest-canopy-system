@@ -1,11 +1,10 @@
-import React from "react";
 import * as THREE from "three";
 import { useEffect, useRef } from "react";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import { createNoise2D } from "simplex-noise";
 import { mergeGeometries } from "three/examples/jsm/utils/BufferGeometryUtils.js";
 
-export default function App(): JSX.Element {
+export default function App() {
   const canvasRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
